@@ -8,8 +8,12 @@
     <link href="
 https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,11 +22,163 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             padding: 0;
             font-family: "Roboto", sans-serif;
         }
+        .learn{
+            margin-left: 5px;
+            margin-right: 5px;
+            position: relative;
+        }
+        .learn img{
+            border-radius: 5px;
+            position:absolute;  
+            opacity: 0.8;
+        }
+        /* .learn_img{
+            z-index:3;
+        } */
+        .learn_desc{
+            height:100%;
+            z-index: 5;
+        } 
+        
+        .learn_desc{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            position:absolute;
+            align-items: center;
+            top:200px;
+            left:5px;
+        } 
+        @media screen and (max-width:700px) {
+             .learn , .learn img{
+            height: 150px;
+            animation: lern 2s linear forwards;
+        }
+        .learn_desc{
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            position:absolute;
+            top: 7px;
+            left:5px;
+            animation:learn_desc_anim 2s linear forwards;
+        }
+        @keyframes learn_desc_anim {
+            0%{
+                display: none;
+            }
+            75%{
+                display: none;
+            }
+            100%{
+                display: flex;
+            }
+        }
+
+        .learn_desc button{
+            font-size: 10px;
+        }
+
+        @keyframes lern {
+            0% {
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 0px;
+            }
+
+            100% {
+                margin-left: 2%;
+                margin-right: 3%;
+                width: 95%;
+            }
+        }
+        }
+       
     </style>
 </head>
 
 <body>
-    <div class="">hello</div>
+    <p class="text-center py-2 bg-gray-800 text-white text-xs md:text-xl ">Sign up and <span class="font-extrabold">GET
+            20% OFF </span>for your first order<span id="offer"
+            class="cursor-pointer ml-10 md:ml-20 text-red-600">X</span></p>
+
+    <!--Nav bar-->
+    <nav class="flex justify-between items-center ml-5 mr-5 pt-2">
+        <h1 class="text-3xl font-extrabold md:font-semibold">Nostra</h1>
+        <div class="hidden justify-between w-2/4 md:flex">
+            <a href="#" class="hover:underline text-xs text-gray-600">Home</a>
+            <a href="#" class="hover:underline text-xs text-gray-600">New arrival</a>
+            <a href="#" class="hover:underline text-xs text-gray-600">Most wanted</a>
+            <a href="#" class="hover:underline text-xs text-gray-600">Collections</a>
+            <a href="#" class="hover:underline text-xs text-gray-600">Contact Us</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden cursor-pointer" id="menubar">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </nav>
+
+    <!--side nav-->
+    <section id="sidenav"
+        class="fixed top-0 z-20  text-gray-300 h-screen bg-gray-800 transition-all duration-700 ease-linear md:hidden"
+        style="width:50%; left: -50%;">
+        <p id="closesidenav" class="text-right mr-5 mt-5 cursor-pointer">X</p>
+        <div class="flex flex-col p-5 gap-5">
+            <a href="#" class="hover:underline text-xl">Home</a>
+            <a href="#" class="hover:underline text-xl">New arrival</a>
+            <a href="#" class="hover:underline text-xl">Most wanted</a>
+            <a href="#" class="hover:underline text-xl">Collections</a>
+            <a href="#" class="hover:underline text-xl">Contact Us</a>
+        </div>
+    </section>
+
+    <!--image slider-->
+    <!-- <div class="learn ">
+        <div class="learn_img" id="image">
+            <img src="./Images/slider-one.jpg" class="w-full">
+            <img src="./Images/slider-one.jpg" class="w-full">
+            <img src="./Images/slider-one.jpg" class="w-full">
+        </div>
+        <div class="learn_desc flex items-center justify-between">
+            <i id="leftarrow" class="fa-solid fa-arrow-left fa-2xl cursor-pointer" style="color: #ffffff;"></i>
+            <div class="text-white flex flex-col md:gap-5 text-center justify-center items-center">
+                <h1 class="text-1xl font-extrabold md:text-3xl">Level up your  style with our</h1>
+                <p class="text-xs">Summer collections</p>
+                <button class=" text-gray-600 w-2/5 border rounded-md bg-white">Shop now</button>
+            </div>
+            <i id="rightarrow" class="fa-solid fa-arrow-right fa-2xl cursor-pointer" style="color: #ffffff;"></i>
+        </div>
+    </div> -->
+
+    <!--Brands-->
+    <h1 class="ml-2 md:ml-5 text-2xl font-bold">Brands</h1>
+    <div class="brands">
+        <div class="brands_sec">
+            <img src="./Images/puma.png">
+            <p>Puma</p>
+        </div>
+        <div class="brands_sec">
+            <img src="./Images/adidas.png">
+            <p>Adidas</p>
+        </div>
+        <div class="brands_sec">
+            <img src="./Images/leaves (1).png">
+            <p>Leaves</p>
+        </div>
+        <div class="brands_sec">
+            <img src="./Images/simple.png">
+            <p>simple</p>
+        </div>
+        <div class="brands_sec">
+            <img src="./Images/twitch.png">
+            <p>Twitch</p>
+        </div>
+        <div class="brands_sec">
+            <img src="./Images/adidas.png">
+            <p>Adidas</p>
+        </div> 
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

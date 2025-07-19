@@ -1,0 +1,17 @@
+.brands{
+    display:flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.brands_sec{
+    width: 7%;
+    text-align: center;
+}
+.brands_sec img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.brands_sec p{
+    text-align: center;
+}
