@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.search-container{
+    display: flex;
+    padding: 5px;
+}
+.search-container__checkitems h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.search-container__checkitems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.search-container__checkitems__Occassion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.vertical-line{
+   margin: 0 15px;
+   height: 980px;
+   border-left:3px solid  black;
+}
+.search-container__products{
+    flex-grow: 1;
+    padding:5px;
+}
+.search{
+    width: 100%;
+    border: 2px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.search input{
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+    border: none;
+}
+.search i{
+    margin: 5px;
+}
+.item-sec h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+.newsletter input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border:2px solid black;
+    border-radius: 10px;
+    padding:2px;
+}
+.newsletter button{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+@media screen and (max-width:540px) {
+    .search-container__checkitems{
+        flex-basis: 25%;
+    }
+    .search-container__checkitems h2{
+    font-size: 10px;
+    font-weight: bold;
+}
+.search-container__checkitems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    font-size: 8px;
+}
+.vertical-line{
+    height: 400px;
+    margin:0;
+    border-left:3px solid black;
+}
+input[type="checkbox"]{
+    width: 10px;
+    vertical-align: top;
+}
+.item-sec h1 , .item-sec p{
+    font-size: 7px;
+    font-weight: bold;
+}
+.newsletter h1:nth-child(1){
+    font-size:20px;
+}
+.newsletter h1:nth-child(2){
+    font-size:10px;
+}
+}

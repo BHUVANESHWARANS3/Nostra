@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="sticky z-20 w-full top-0 text-center py-2 bg-gray-800 text-white text-xs md:text-xl ">Sign up and <span class="font-extrabold">GET
+            20% OFF </span>for your first order<span id="offer"
+            class="cursor-pointer ml-10 md:ml-20 text-red-600">X</span></p>
+
+
+    <!--Nav bar-->
+    <div class="sticky w-full top-10 px-3 h-fit z-20 shadow-sm bg-white" id="navbar">
+        <nav class="navbar">
+            <h1>Nostra</h1>
+         <div class="navbar__component text-gray-600">
+                <a href="#" >Home</a>
+                <a href="">New arrival</a>
+                <a href="">Most Wanted</a>
+                <a href="./index.html">Collections</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden cursor-pointer" id="menubar">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        </nav> 
+    </div>
+
+    <section id="sidenav"
+
+        class="fixed top-0 z-20  text-gray-300 h-screen bg-gray-800 transition-all duration-700 ease-linear md:hidden"
+        style="width:50%; left: -50%;">
+        <p id="closesidenav" class="text-right mr-5 mt-5 cursor-pointer">X</p>
+        <div class="flex flex-col p-5 gap-5">
+            <a href=",/home" class="hover:underline text-xl">Home</a>
+            <a href="#" class="hover:underline text-xl">New arrival</a>
+            <a href="#" class="hover:underline text-xl">Most wanted</a>
+            <a href="./index.html" class="hover:underline text-xl">Collections</a>
+            <a href="./contact.html" class="hover:underline text-xl">Contact Us</a>
+        </div>
+    </section>
+
+    <div class="slider relative">
+        <div class="img__slider w-full h-full">
+            <img src="./Images/slider-one.jpg" class="w-full h-full">
+        </div>
+        <div class="absolute w-fit text-center text-white h-fit top-1/2 left-1/4  md:left-1/3 transform -translate-y-1/2">
+                <h1 class="md:text-4xl font-extrabold">Level Up your Style with our</h1>
+                <p>Summer Collections</p>
+                <button class="bg-white p-2 text-gray-500 ">Shop Now</button>
+        </div>
+
+    </div>
+    
+     <!--Brands-->
+    <div class="brands mt-5 ml-5">
+        <h3 class="font-bold">Brands</h3>
+        <div class="brands__zone">
+            <div class="brands__zone__component">
+                <img src="./Images/adidas.png">
+                <p>adidas</p>
+            </div>
+            <div class="brands__zone__component">
+                <img src="./Images/behance.png">
+                <p>adidas</p>
+            </div>
+            <div class="brands__zone__component">
+                <img src="./Images/leaves (1).png">
+                <p>adidas</p>
+            </div>
+            <div class="brands__zone__component">
+                <img src="./Images/twitch.png">
+                <p>adidas</p>
+            </div>
+            <div class="brands__zone__component">
+                <img src="./Images/puma.png">
+                <p>adidas</p>
+            </div>
+            <div class="brands__zone__component">
+                <img src="./Images/leaves.png">
+                <p>adidas</p>
+            </div>
+            <div class="brands__zone__component">
+                <img src="./Images/adidas.png">
+                <p>adidas</p>
+            </div>
+        </div>
+    </div>
+
+     <div class="newsletter">
+        <h1 class="text-3xl mt-10 font-bold">Join our News Letter</h1>
+        <h1>Signup for our email newspaper to get exclusive discounts, updates, and more
+</h1>
+    <input type="text" placeholder="Enter your emial address">
+    <button>Subscribe<i class="fa-solid fa-arrow right"></i></button>
+    </div>
+
+    <div class="p-5 md:p-10 mt-3 md:mt-7 bg-gray-800 text-white">
+         <div class="flex flex-col gap-3">
+                <h1 class="text-xl md:text-2xl">Nostra</h1>
+                <p class="text-xs md:text-xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+                <div class="flex mt-5 gap-6">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p class="text-xs md:text-xl mt-3">@2025 Nostra.com</p>
+         </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
